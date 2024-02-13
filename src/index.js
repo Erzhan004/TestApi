@@ -16,7 +16,7 @@
     app.use(express.urlencoded({ extended: false }));
     app.set('views',path.join(process.cwd(), 'views'));
     // Static file
-    app.use(express.static(path.join(__dirname, '../public')));
+    app.use(express.static(path.join(__dirname, '../public/')));
     const templatePath = path.join(__dirname, '../views');
 
     const publicPath = path.join(__dirname, '../public');
